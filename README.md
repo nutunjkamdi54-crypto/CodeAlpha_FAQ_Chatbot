@@ -40,9 +40,6 @@ While working on this project, I focused on creating a clean user interface and 
 
 ![Home Screen](screenshots/home.png)
 
-### Welcome Screen
-
-![Welcome Screen](screenshots/welcome.png)
 
 ### Chat Example
 
