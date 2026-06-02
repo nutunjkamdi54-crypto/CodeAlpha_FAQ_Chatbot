@@ -117,6 +117,12 @@ Working on this project helped me learn:
 
 ---
 
+## 🙏 Acknowledgement
+
+I would like to thank CodeAlpha for providing me with the opportunity to work on practical projects and gain hands-on experience in software development. This internship helped me improve my technical skills and understand real-world project development.
+
+---
+
 ## Author
 
 **Nutunj Kamdi**
