@@ -32,7 +32,10 @@ function addToHistory(question) {
 
     item.classList.add("chat-item");
 
-    item.textContent = question;
+    item.textContent =
+    question.length > 25
+    ? question.substring(0,25) + "..."
+    : question;
 
     chatHistory.appendChild(item);
 
@@ -65,7 +68,10 @@ function loadHistory() {
 
         item.classList.add("chat-item");
 
-        item.textContent = chat;
+        item.textContent =
+    chat.length > 25
+    ? chat.substring(0,25) + "..."
+    : chat;
 
         chatHistory.appendChild(item);
 
@@ -128,21 +134,6 @@ async function sendMessage() {
             "bot-message"
         );
 
-        /* Voice Output */
-
-        window.speechSynthesis.cancel();
-
-        const speech =
-            new SpeechSynthesisUtterance(
-                data.response
-            );
-
-        speech.rate = 1;
-        speech.pitch = 1;
-
-        window.speechSynthesis.speak(
-            speech
-        );
 
     } catch (error) {
 
@@ -194,30 +185,54 @@ newChatBtn.addEventListener(
         `;
 
         chatBox.innerHTML = `
-            <div class="bot-message">
 
-                🤖 <strong>Dev AI</strong>
+<div class="bot-message welcome-card">
 
-                <br><br>
+    <h2>👋 Welcome to Dev AI</h2>
 
-                Hello! I'm Dev AI Assistant.
+    <br>
 
-                <br><br>
+    I can help you with:
 
-                Ask me anything about:
+    <br><br>
 
-                <br>• Artificial Intelligence
-                <br>• Python Programming
-                <br>• Web Development
-                <br>• Machine Learning
-                <br>• Technology
+    🤖 Artificial Intelligence
+    <br>
+    🐍 Python Programming
+    <br>
+    🌐 Web Development
+    <br>
+    🧠 Machine Learning
+    <br>
+    🚀 Technology Concepts
 
-                <br><br>
+    <br><br>
 
-                🚀 Ready to help!
+    💡 Try one of the suggestions below.
 
-            </div>
-        `;
+</div>
+
+<div class="suggestions">
+
+    <button class="suggestion-btn">
+        What is AI?
+    </button>
+
+    <button class="suggestion-btn">
+        What is Python?
+    </button>
+
+    <button class="suggestion-btn">
+        What is Flask?
+    </button>
+
+    <button class="suggestion-btn">
+        What is Machine Learning?
+    </button>
+
+</div>
+
+`;
     }
 );
 
@@ -265,3 +280,19 @@ if (SpeechRecognition) {
             micBtn.innerHTML = "🎤";
         };
 }
+
+
+/* =========================
+   SUGGESTION BUTTONS
+========================= */
+
+document.addEventListener("click", (e) => {
+
+    if (e.target.classList.contains("suggestion-btn")) {
+
+        userInput.value = e.target.innerText;
+
+        sendMessage();
+    }
+});
+

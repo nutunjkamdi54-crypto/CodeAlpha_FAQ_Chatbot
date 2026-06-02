@@ -367,8 +367,9 @@ body{
 ========================= */
 
 .chat-box{
-    justify-content:center;
+    justify-content:flex-start;
 }
+
 
 /* =========================
    BETTER INPUT GLOW
@@ -420,4 +421,119 @@ body{
 
 .input-container input{
     backdrop-filter:blur(15px);
+}
+
+/* =========================
+   ONLINE STATUS DOT
+========================= */
+
+.online-dot{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin-left:8px;
+    border-radius:50%;
+    background:#22c55e;
+    box-shadow:
+        0 0 10px #22c55e,
+        0 0 20px #22c55e;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    50%{
+        transform:scale(1.2);
+        opacity:.8;
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+/* =========================
+   WELCOME CARD
+========================= */
+
+
+.welcome-card{
+    text-align:center;
+    max-width:850px;
+    margin:40px auto 10px auto;
+}
+
+.welcome-card h2{
+    color:#2dd4bf;
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+/* =========================
+   SUGGESTION BUTTONS
+========================= */
+
+.suggestions{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin-top:10px;
+}
+
+.suggestion-btn{
+    background:rgba(16,32,51,.95);
+    color:#2dd4bf;
+    border:1px solid rgba(45,212,191,.25);
+    padding:12px 18px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:14px;
+    font-weight:500;
+}
+
+.suggestion-btn:hover{
+    background:#14b8a6;
+    color:white;
+    transform:translateY(-2px);
+    box-shadow:0 0 15px rgba(20,184,166,.35);
+}
+
+/* =========================
+   FOOTER IMPROVEMENT
+========================= */
+
+.footer{
+    margin-top:auto;
+    text-align:center;
+    color:#64748b;
+    font-size:13px;
+    padding-top:20px;
+    line-height:1.6;
+}
+
+/* =========================
+   MOBILE FIXES
+========================= */
+
+@media(max-width:768px){
+
+    .suggestions{
+        gap:8px;
+    }
+
+    .suggestion-btn{
+        width:100%;
+        max-width:260px;
+    }
+
+    .welcome-card h2{
+        font-size:24px;
+    }
 }

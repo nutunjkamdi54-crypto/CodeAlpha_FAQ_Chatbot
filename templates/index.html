@@ -17,7 +17,10 @@
     <div class="sidebar">
 
         <div class="logo">
-            <h2>🤖 Dev AI</h2>
+            <h2>
+                🤖 Dev AI
+                <span class="online-dot"></span>
+            </h2>
         </div>
 
         <button class="new-chat">
@@ -33,7 +36,7 @@
         </div>
 
         <div class="footer">
-            CodeAlpha Internship Project
+            Powered by Python • Flask • NLP 🚀
         </div>
 
     </div>
@@ -55,27 +58,50 @@
         <!-- Chat Area -->
         <div id="chatBox" class="chat-box">
 
-            <div class="bot-message">
+            <div class="bot-message welcome-card">
 
-                🤖 <strong>Dev AI</strong>
+                <h2>👋 Welcome to Dev AI</h2>
 
-                <br><br>
+                <br>
 
-                Hello! I'm Dev AI Assistant.
-
-                <br><br>
-
-                Ask me anything about:
-
-                <br>• Artificial Intelligence
-                <br>• Python Programming
-                <br>• Web Development
-                <br>• Machine Learning
-                <br>• Technology
+                I can help you with:
 
                 <br><br>
 
-                🚀 Ready to help!
+                🤖 Artificial Intelligence
+               <br>
+🐍 Python Programming
+<br>
+🌐 Web Development
+<br>
+🧠 Machine Learning
+<br>
+🚀 Technology Concepts
+
+                <br><br>
+
+                💡 Try one of the suggestions below.
+
+            </div>
+
+            <!-- Quick Suggestions -->
+            <div class="suggestions">
+
+                <button class="suggestion-btn">
+                    What is AI?
+                </button>
+
+                <button class="suggestion-btn">
+                    What is Python?
+                </button>
+
+                <button class="suggestion-btn">
+                    What is Flask?
+                </button>
+
+                <button class="suggestion-btn">
+                    What is Machine Learning?
+                </button>
 
             </div>
 
@@ -105,4 +131,5 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
+
 </html>

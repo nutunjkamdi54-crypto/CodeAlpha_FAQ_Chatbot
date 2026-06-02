@@ -37,12 +37,11 @@ def get_response(user_question):
     best_score = similarity[0][best_match_index]
 
     # Return Matching Answer
-    if best_score > 0.30:
+    if best_score > 0.2:
         return faq_data[best_match_index]["answer"]
 
     # Default Response
     return (
-        "I couldn't find an exact answer. "
-        "Try asking about AI, Python, Web Development, "
-        "Machine Learning, or Technology."
-    )
+    "Sorry, I don't know that yet. "
+    "Try asking about AI, Python, Flask, Machine Learning, Web Development, or Technology."
+)

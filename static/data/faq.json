@@ -1,5 +1,41 @@
 [
     {
+        "question": "Hello",
+        "answer": "Hello! 👋 I'm Dev AI. How can I help you today?"
+    },
+    {
+        "question": "Hi",
+        "answer": "Hi there! 👋 Ask me anything about AI, Python, Web Development, or Technology."
+    },
+    {
+        "question": "Good Morning",
+        "answer": "Good Morning! ☀️ Hope you're having a great day."
+    },
+    {
+        "question": "Good Evening",
+        "answer": "Good Evening! 🌙 How can I assist you today?"
+    },
+    {
+        "question": "How are you",
+        "answer": "I'm doing great! 🤖 Thanks for asking."
+    },
+    {
+        "question": "Who are you",
+        "answer": "I am Dev AI, a smart assistant built using Python, Flask, and NLP."
+    },
+    {
+        "question": "What can you do",
+        "answer": "I can answer questions about AI, Python, Machine Learning, Web Development, and Technology."
+    },
+    {
+        "question": "Thank you",
+        "answer": "You're welcome! 😊 Happy to help."
+    },
+    {
+        "question": "Bye",
+        "answer": "Goodbye! 👋 Have a great day."
+    },
+    {
         "question": "What is AI",
         "answer": "Artificial Intelligence is the simulation of human intelligence by machines."
     },
@@ -12,16 +48,28 @@
         "answer": "Machine Learning is a subset of Artificial Intelligence that enables systems to learn from data."
     },
     {
+        "question": "What is Deep Learning",
+        "answer": "Deep Learning is a branch of Machine Learning that uses neural networks with multiple layers."
+    },
+    {
+        "question": "What is NLP",
+        "answer": "Natural Language Processing helps computers understand, interpret, and generate human language."
+    },
+    {
         "question": "What is Python",
-        "answer": "Python is a popular programming language used in web development, data science, automation, and AI."
+        "answer": "Python is a popular programming language used in web development, AI, automation, and data science."
+    },
+    {
+        "question": "Who created Python",
+        "answer": "Python was created by Guido van Rossum and released in 1991."
     },
     {
         "question": "What is Flask",
         "answer": "Flask is a lightweight Python framework used to build web applications and APIs."
     },
     {
-        "question": "What is NLP",
-        "answer": "Natural Language Processing helps computers understand, interpret, and generate human language."
+        "question": "What is Django",
+        "answer": "Django is a high-level Python web framework that follows the model-template-view architecture."
     },
     {
         "question": "What is Web Development",
@@ -40,11 +88,35 @@
         "answer": "JavaScript is a programming language used to make websites interactive."
     },
     {
-        "question": "Who created Python",
-        "answer": "Python was created by Guido van Rossum and released in 1991."
+        "question": "What is React",
+        "answer": "React is a JavaScript library used to build user interfaces."
+    },
+    {
+        "question": "What is API",
+        "answer": "An API is an Application Programming Interface that allows software applications to communicate with each other."
+    },
+    {
+        "question": "What is Database",
+        "answer": "A database is an organized collection of data that can be easily accessed and managed."
+    },
+    {
+        "question": "What is SQL",
+        "answer": "SQL stands for Structured Query Language and is used to manage databases."
     },
     {
         "question": "What is Data Science",
         "answer": "Data Science is the field of extracting insights and knowledge from data."
+    },
+    {
+        "question": "What is Cloud Computing",
+        "answer": "Cloud Computing is the delivery of computing services over the internet."
+    },
+    {
+        "question": "What is Git",
+        "answer": "Git is a distributed version control system used to track changes in source code."
+    },
+    {
+        "question": "What is GitHub",
+        "answer": "GitHub is a platform for hosting and managing Git repositories."
     }
 ]
